@@ -1,0 +1,216 @@
+body {
+    font-size: 14px;
+    color: navy;
+    background-color: black;
+}
+
+#login_header, #input_username, #input_password, #login_btn, #wrong_login, #success_logout,
+#login_layer, #profile_header, #logoff_btn, #calculator_btn, #profile_table, #profile_layer,
+#calculator_header, #logoff_cal_btn, #profile_btn, #value_screen, #input_box, #calculator_layer{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+/* style the form container */
+#login_layer, #profile_layer, #calculator_layer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -425px;
+    width: 800px;
+    height: 400px;
+    padding: 30px 25px 0 25px;
+    cursor: default;
+    background: linear-gradient(black, lawngreen);
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+}
+
+/* style the form container */
+#wrong_login, #success_logout {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -425px;
+    width: 775px;
+    height: 5px;
+    padding: 0px 0px 0 25px;
+    cursor: default;
+    border-color: transparent;
+    opacity: 5;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+/* For the form title add some basic styles */
+#login_header, #profile_header, #calculator_header {
+    line-height: 40px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    color: #e4e4e4;
+}
+
+/* For the wrong login message*/
+#wrong_login_message, #wrong_login {
+    line-height: 50px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: red;
+}
+
+/* For the wrong login message*/
+#success_logout_message, #success_logout {
+    line-height: 50px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+/* basic styles to the inputs*/
+#login_layer input[type=text], #calculator_layer input[type=text], #login_layer input[type=password] {
+    line-height: 34px;
+    margin: 10px 0;
+    padding: 6px 15px;
+    border: 0;
+    outline: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px rgba(255,255,255, .2);
+    border-radius: 26px;
+    transition: all .15s ease-in-out;
+}
+
+#img{
+    float:right;
+    width: 45%;
+    height: 50%;
+    border-radius: 26px;
+    transition: all .15s ease-in-out;
+}
+
+/* basic styles to the inputs*/
+#login_layer input[type=button], #profile_layer input[type=button], #calculator_layer input[type=button],
+#multiple_box, #clean_box, #plus_box {
+    line-height: 14px;
+    margin: 10px 0;
+    padding: 6px 15px;
+    border: 0;
+    outline: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px rgba(255,255,255, .2);
+    border-radius: 26px;
+    transition: all .15s ease-in-out;
+}
+
+#calculator_layer input[type=text]{
+    color: #686868;
+    width: 720px;
+    alignment: right;
+    box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+    background: #989898;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#989898));
+    background: linear-gradient(top,  #ffffff 0%,#989898 100%);
+}
+
+/*  Style the user and password input.
+    Add a gray background gradient and some shadows.
+    Add fixed 170px width and a color for the text. */
+#login_layer input[type=text], #login_layer input[type=password] {
+    color: #686868;
+    width: 770px;
+    box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+    background: #989898;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#989898));
+    background: linear-gradient(top,  #ffffff 0%,#989898 100%);
+}
+
+/* For the hover state we will only change the shadows of the inputs.*/
+#login_layer input[type=text]:hover, #input_box:hover, #login_layer input[type=password]:hover {
+    box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6), 0px 0px 5px rgba(255,255,255, .5);
+}
+
+#login_layer input[type=text]:focus, #login_layer input[type=password]:focus {
+    background: #e1e1e1;
+    background: linear-gradient(top,  #ffffff 0%,#e1e1e1 100%);
+}
+
+#login_layer input[type=button], #profile_layer input[type=button], #logoff_cal_btn, #profile_btn {
+    width: 800px;
+    cursor: pointer;
+    color: #445b0f;
+    box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .45), 0px 1px 1px 0px rgba(0,0,0, .3);
+}
+
+#multiple_box, #clean_box, #plus_box {
+    width: 100%;
+    cursor: pointer;
+    color: #445b0f;
+    box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .45), 0px 1px 1px 0px rgba(0,0,0, .3);
+}
+
+/* For the hover state - change the shadows and for the active state we will remove them. */
+#login_layer input[type=button]:hover,  {
+    box-shadow: inset 1px 1px 3px 0px rgba(255,255,255, .8), 0px 1px 1px 0px rgba(0,0,0, .6);
+}
+
+#login_layer input[type=button]:active {
+    box-shadow: none;
+}
+
+#plus, #multiple, #clean {
+    width: 33%;
+}
+
+table, td{
+    border: 0px solid black;
+    text-align: left;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+#sign_table, #cal_table{
+    width: 100%;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+#left_name, #left_hob, #left_whom, #left_fun {
+    font-weight: bold;
+}
+
+#profile_table {
+    width: 55%;
+    height: 52%;
+    background-color: transparent;
+}
+
+#logoff_btn, #logoff_cal_btn, #login_btn {
+    position:absolute;
+    bottom: 5%;
+    right: 3%;
+}
+
+#calculator_btn, #profile_btn {
+    position:absolute;
+    bottom: 17%;
+    right: 3%;
+}
+
+#profile_layer input[type=button]:hover, #calculator_layer input[type=button]:hover {
+    box-shadow: inset 1px 1px 3px 0px rgba(255,255,255, .8), 0px 1px 1px 0px rgba(0,0,0, .6);
+}
+
+#profile_layer input[type=button]:active, #profile_layer input[type=button]:active {
+    box-shadow: none;
+}
