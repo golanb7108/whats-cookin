@@ -128,7 +128,7 @@ function fillList(){
             }
             else {
                 all_items = JSON.parse(JSON.stringify(data));
-                document.getElementById('counter').innerHTML = "Number of tasks = " + all_items.length;
+                document.getElementById('counter').innerHTML = "Number of products = " + all_items.length;
                 for (i = 0; i < all_items.length; i++){
                     if (typeof all_items[i] === 'undefined') continue;
                     setTaskInHTML(all, all_items[i], i);
@@ -318,14 +318,14 @@ function runScript(e){
 /* Set register window */
 function activate_register(){
     document.getElementById("login").style.display = "none";
-    document.getElementById("todoapp").style.display = "none";
+    document.getElementById("cookinapp").style.display = "none";
     document.getElementById("register").style.display = "block";
 }
 
 /* Set login window */
 function activate_login(){
     document.getElementById("register").style.display = "none";
-    document.getElementById("todoapp").style.display = "none";
+    document.getElementById("cookinapp").style.display = "none";
     document.getElementById("login").style.display = "block";
 }
 
@@ -333,6 +333,6 @@ function activate_login(){
 function activate_todo(){
     document.getElementById("register").style.display = "none";
     document.getElementById("login").style.display = "none";
-    document.getElementById("todoapp").style.display = "block";
+    document.getElementById("cookinapp").style.display = "block";
 }
 
