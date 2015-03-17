@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="383b4d2a-92f5-4b99-8141-5ac5b8b9b5c9" name="Default" comment="" />
+    <list default="true" id="383b4d2a-92f5-4b99-8141-5ac5b8b9b5c9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hujiwebserver.js" afterPath="$PROJECT_DIR$/hujiwebserver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="whats-cookin.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +42,8 @@
       <file leaf-file-name="hujiwebserver.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hujiwebserver.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6062052" vertical-offset="481" max-vertical-offset="1410">
-              <caret line="51" column="71" selection-start-line="51" selection-start-column="71" selection-end-line="51" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.5346062" vertical-offset="436" max-vertical-offset="1455">
+              <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -291,8 +294,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hujiwebserver.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6062052" vertical-offset="481" max-vertical-offset="1410">
-          <caret line="51" column="71" selection-start-line="51" selection-start-column="71" selection-end-line="51" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.5346062" vertical-offset="436" max-vertical-offset="1455">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
           <folding />
         </state>
       </provider>

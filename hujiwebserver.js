@@ -37,11 +37,14 @@ function checkPathRelativity(dir) {
 /* Return static handler */
 exports.static = function (rootFolder){
     var fixedRoot;
+    /*Comment out on Linux Platform
     if (!checkPathRelativity(rootFolder)) {
         fixedRoot = rootFolder;
     } else {
         fixedRoot = path.join(__dirname, rootFolder);
-    }
+    }*/
+    /*Comment out on Windows Platform */
+    fixedRoot = path.join(__dirname, rootFolder);
     return function(http_req, http_res, next){
         var file,                                                     // Asked file
             url_pathname,                                    // file's URL pathname
